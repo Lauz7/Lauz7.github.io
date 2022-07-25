@@ -22,18 +22,18 @@ img{
 }
 
 h2{
-    font-family:"https://fonts.google.com/specimen/Montserrat";
+    font-family:"Montserrat", sans-serif;
     font-size: "16px";
 
 }
 
 h1{
-    font-family:"https://fonts.google.com/specimen/Fraunces"
+    font-family:"Fraunces", serif";
 
 }
 
 .description{
-    font-family:"https://fonts.google.com/specimen/Montserrat";
+    font-family:"Montserrar", sans-serif;
     font-size: "14px";
 }
 
