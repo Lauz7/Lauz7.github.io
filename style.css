@@ -2,25 +2,35 @@
 @import url("https://fonts.google.com/specimen/Montserrat")
 @import url("https://fonts.google.com/specimen/Fraunces")
 
+
+html{
+    margin:0;
+    padding:0;
+}
 body{
-    height=100px
-    width=100px
-    background color="30, 38%, 92%"
+    height:100px;
+    width:100px;
+    background color:"30, 38%, 92%";
 }
 
 img{
+    align:"left";
 
 }
 
 h2{
+    font-family:"https://fonts.google.com/specimen/Montserrat";
+    font-size: "16px";
 
 }
 
 h1{
+    font-family:"https://fonts.google.com/specimen/Fraunces"
 
 }
 
 .description{
-    
+    font-family:"https://fonts.google.com/specimen/Montserrat";
+    font-size: "14px";
 }
 
