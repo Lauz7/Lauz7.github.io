@@ -13,7 +13,7 @@ main{
 body{
     height:100px;
     width:100px;
-    background color:"30, 38%, 92%";
+    background color:"hsl(30, 38%, 92%)";
 }
 
 img{
@@ -24,16 +24,19 @@ img{
 h2{
     font-family:"Montserrat", sans-serif;
     font-size: "16px";
+    font-weight:"500";
 
 }
 
 h1{
     font-family:"Fraunces", serif";
+    font-weight:"700";
 
 }
 
 .description{
     font-family:"Montserrar", sans-serif;
     font-size: "14px";
+    font-weight:"500";
 }
 
