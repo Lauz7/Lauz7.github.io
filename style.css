@@ -7,8 +7,6 @@ html{
     max-width: 1440px;
     padding:100px;
     max-height:1440px;
-    display: table;
-    margin: auto;
 }
 
 
@@ -20,7 +18,6 @@ body{
     overflow: hidden;
     border-radius:20px;
     margin:0 auto;
-   
 }
 
 img{
