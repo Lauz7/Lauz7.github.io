@@ -85,6 +85,7 @@ button{
 }
 button:active, button:hover {
 cursor:pointer;
+background-color: hsl(152, 30%, 15%);
 }
 
 footer{
