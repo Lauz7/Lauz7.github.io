@@ -22,7 +22,7 @@ body{
 
 img{
     max-width:750px;
-    max-height:420px;
+    height:100%;
     align:left;
     float:left;
     padding-left: 0px;
