@@ -7,7 +7,10 @@ html{
     max-width: 1440px;
     padding:100px;
     max-height:1440px;
+    display: table;
+    margin: auto;
 }
+
 
 body{
     padding: 3px;
@@ -16,6 +19,8 @@ body{
     max-height:720px;
     overflow: hidden;
     border-radius:20px;
+    margin:0 auto;
+   
 }
 
 img{
@@ -96,4 +101,10 @@ a:link{
 }
 a:visited{
 color:hsl(300, 100%, 30%);
+}
+.attribution{
+    text-align: center;
+    padding-top:1em;
+    position:fixed;
+    bottom:100px;
 }
