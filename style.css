@@ -7,6 +7,7 @@ html{
     max-width: 1440px;
     padding:100px;
     max-height:1440px;
+    
 }
 
 
@@ -17,7 +18,8 @@ body{
     max-height:720px;
     overflow: hidden;
     border-radius:20px;
-    margin:0 auto;
+    margin: auto;
+   
 }
 
 img{
