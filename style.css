@@ -6,8 +6,7 @@ html{
     background-color: hsl(30, 38%, 92%);
     max-width: 1440px;
     padding:100px;
-    max-height:1440px;
-    
+    max-height:1440px; 
 }
 
 
@@ -17,9 +16,7 @@ body{
     max-width: 700px;
     max-height:720px;
     overflow: hidden;
-    border-radius:20px;
-    margin: auto;
-   
+    border-radius:20px; 
 }
 
 img{
