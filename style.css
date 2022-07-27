@@ -117,6 +117,37 @@ color:hsl(300, 100%, 30%);
     position: fixed;
 }
 
+<!-- Attempt at media query -->
+
+@media only screen and (max-width:640px){
+    .content{
+        height: 500px;
+    }
+    .price{
+        margin-right: 15px;
+    }
+}
+
+@media only screen and (max-width:530px){
+    .content{
+        display: flex;
+        justify-content: center;
+        height:inherit;
+        flex-direction: column;
+        width:inherit;
+    }
+
+    .perfume-pic{
+        width:100%;
+    }
+    .perfume-pic img{
+        object-fit: cover;
+    }
+  
+  .button{
+      padding: 20px;
+  }
+
 
 
 
