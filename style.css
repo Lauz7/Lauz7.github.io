@@ -120,8 +120,8 @@ color:hsl(300, 100%, 30%);
 <!-- Attempt at media query -->
 
 
-  @media screen and (min-width: 768px){
-    .card-container {
+  @media screen and (max-width: 375px){
+    .content {
       grid-template-rows:0;
       grid-template-columns: repeat(2, 1fr);
       width: 600px;
@@ -140,9 +140,9 @@ color:hsl(300, 100%, 30%);
       border-bottom-right-radius: 0px;
       background-image: url("./images/image-product-desktop.jpg"); //==> image
    }
-   .content {
+   .html{
       margin: 40px 30px;
-      max-width: 250px;
+      max-width: 375px;
    }
    .p {
       margin-right: 40px;
