@@ -4,35 +4,39 @@
 
 html{
     background-color: hsl(30, 38%, 92%);
-    max-width: 1440px;
     padding:100px;
-    max-height:1440px; 
+}
+
+.content{
+    display:flex;
+    justify-content: center;
+    height: 60vh;
+    width: 90vh;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    flex-direction: row;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%) ;
 }
 
 
-body{
-    padding: 3px;
-    background-color: hsl(0, 0%, 100%);
-    max-width: 700px;
-    max-height:720px;
-    overflow: hidden;
-    border-radius:20px; 
-    margin:0, auto;
+.perfume-pic{
+    display: flex;
+    justify-content: flex-start;
 }
+
 
 img{
-    max-width:850px;
-    max-height:410px;
-    align:left;
-    float:left;
+    max-width:45vh;
+    max-height:60vh;
     padding-left: 0px;
-    padding-right: 10px;
-    padding-top: 0px;
-    padding-bottom: 0px;
+    padding-right: 20px;
     border-radius:20px;
-    object-fit: contain;
-
 }
+
 
 .reduction{
     text-decoration: line-through;
@@ -42,14 +46,15 @@ img{
     font-family:'Montserrat', sans-serif;
 }
 
-h3{ 
+.price{ 
     color:hsl(158, 36%, 37%);
     font-weight: bolder;
     font-size: 30px;
     font-family:'Fraunces', serif; 
+    padding: 5px;
 }
 
-h2{
+.perfume{
     font-family:'Montserrat', sans-serif;
     font-weight: 500;
     font-variant: uppercase;
@@ -62,7 +67,8 @@ h1{
     font-family:'Fraunces', serif;
     font-weight: boldest;
     color: hsl(212, 21%, 14%);
-    align:right;
+    text-align: left;
+    flex-wrap: wrap;
 }
 
 p{
@@ -70,14 +76,15 @@ p{
     font-weight: 700;
     color: hsl(228, 12%, 48%);
     align:right;
+    margin: 30px;
 }
 button{
     display:flex;
-    align-items: right;
     justify-content: center;
+    align-self: center;
     font-weight: bold;
     border: none;
-    width:25%;
+    width:60%;
     border-radius: 5px;
     padding:1em;
     color:white;
@@ -86,7 +93,9 @@ button{
 button:active, button:hover {
 cursor:pointer;
 background-color: hsl(152, 30%, 15%);
+
 }
+
 
 footer{
     text-align: right;
@@ -104,7 +113,10 @@ color:hsl(300, 100%, 30%);
 .attribution{
     text-align: center;
     padding-top:1em;
-    position:fixed;
-    bottom:100px;
+    bottom:40px;
+    position: fixed;
 }
+
+
+
 
