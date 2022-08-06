@@ -1,57 +1,71 @@
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500&family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
 
 
 html{
     background-color: hsl(30, 38%, 92%);
-    padding:100px;
+}
+@media only screen and (min-width:600px){
+html{
+    background-color: hsl(30, 38%, 92%);
+    }
 }
 
-.content{
-    display:flex;
+
+.card{
+    display:block;
     justify-content: center;
-    height: 60vh;
-    width: 90vh;
+    max-height: 800px;
+    max-width: 300px;
     align-items: center;
     background-color: white;
-    border-radius: 20px;
+    border-radius: 10px;
+    flex-direction: column;
+    padding-bottom: 1em;
+    position: relative;
+    margin: 25px;
+}
+@media only screen and (min-width:801px){
+   .card{
+    display:flex;
+    justify-content: center;
+    max-height: 100%;
+    max-width: 100%;
+    background-color: white;
+    border-radius: 10px;
     flex-direction: row;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform:translate(-50%,-50%) ;
+    transform:translate(-50%,-50%);
+    padding-bottom: 0%;
+   }
 }
-
-
-.perfume-pic{
-    display: flex;
-    justify-content: flex-start;
+.text-container{
+    max-width: 800px;
+    padding-right: 20px;
+    padding-left: 10px;
+    
 }
-
 
 img{
-    max-width:45vh;
-    max-height:60vh;
-    padding-left: 0px;
-    padding-right: 20px;
-    border-radius:20px;
+    display:block;
+    max-width: 100%;
+    max-height: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
-
-
-.reduction{
-    text-decoration: line-through;
-    padding-left: 10px;
-    color:hsl(228, 12%, 48%);
-    font-size: 20px;
-    font-family:'Montserrat', sans-serif;
-}
-
-.price{ 
-    color:hsl(158, 36%, 37%);
-    font-weight: bolder;
-    font-size: 30px;
-    font-family:'Fraunces', serif; 
-    padding: 5px;
+@media only screen and (min-width:801px){
+    img{
+        display: flex;
+        justify-content: flex-start;
+        width: 800px;
+        height:500px;
+        padding-right: 10px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        position: relative;
+    }
 }
 
 .perfume{
@@ -59,98 +73,138 @@ img{
     font-weight: 500;
     font-variant: uppercase;
     color: hsl(228, 12%, 48%);
-    align:right;
-
 }
-
-h1{
-    font-family:'Fraunces', serif;
-    font-weight: boldest;
-    color: hsl(212, 21%, 14%);
-    text-align: left;
-    flex-wrap: wrap;
-}
-
-p{
-    font-family:'Montserrat', sans-serif;
-    font-weight: 700;
-    color: hsl(228, 12%, 48%);
-    align:right;
-    margin: 30px;
-}
-button{
-    display:flex;
-    justify-content: center;
-    align-self: center;
-    font-weight: bold;
-    border: none;
-    width:60%;
-    border-radius: 5px;
-    padding:1em;
-    color:white;
-    background-color: hsl(158, 36%, 37%);
-}
-button:active, button:hover {
-cursor:pointer;
-background-color: hsl(152, 30%, 15%);
-
+@media only screen and (min-width:801px){
+    .perfume{
+        font-size:15px;
+    }
 }
 
 
-footer{
-    text-align: right;
-    padding-right: 4px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: light;
-    color:hsl(228, 12%, 48%);
-}
-a:link{
-    color:hsl(158, 36%, 37%) ;
-}
-a:visited{
-color:hsl(300, 100%, 30%);
-}
-.attribution{
-    text-align: center;
-    padding-top:1em;
-    bottom:40px;
-    position: fixed;
-}
+        h1{
+            font-family:'Fraunces', serif;
+            font-weight: 500;
+            color: hsl(212, 21%, 14%);
+            text-align: left;
+            flex-wrap: wrap;
+            padding-left: 10px;
+        }
+        @media only screen and (min-width:801px){
+            h1{
+                font-size:35px;
+            }
+        }
 
-<!-- Attempt at media query -->
+        p{
+            font-family:'Montserrat', sans-serif;
+            font-weight: 700;
+            color: hsl(228, 12%, 48%);
+            margin: 20px;
+        }
+        @media only screen and (min-width:801px){
+            p{
+                font-size:15px;
+            }
+        }
 
+        .price{ 
+            color:hsl(158, 36%, 37%);
+            font-weight: bolder;
+            font-size: 25px;
+            font-family:'Fraunces', serif; 
+            padding-left: 25px;
+            text-align: left;
+        }
+        .reduction{
+            text-decoration: line-through;
+            padding-left: 10px;
+            color:hsl(228, 12%, 48%);
+            font-size:18px;
+            font-family:'Montserrat', sans-serif;
+        }
+        @media only screen and (min-width:801px){
+            .price{
+                font-size:30px;
+                padding-bottom: 5%;
+            }
+            .reduction{
+                padding-left: 0%;
+                font-size: 15px;
+                position: relative;
+                left: 10%;
+                padding-bottom: 5%;
+            }
+        }
 
-  @media screen and (max-width: 375px){
-    .content {
-      display:flex;
-      justify-content:center;
-      width: 600px;
-      height: 450px;
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: 150px;
-      margin-bottom: auto;
-   }
-   .perfume-pic {
-      width: 300px;
-      height: 450px;
-      border-top-left-radius: 20px;
-      border-bottom-left-radius:20px;
-      border-top-right-radius: 20px;
-      border-bottom-right-radius: 20px;
-      background-image: url(https://github.com/Lauz7/Lauz7.github.io/blob/main/image-product-mobile.jpg?raw=true" alt="Product image); 
-   }
-   .html{
-      margin: 40px 30px;
-      max-width: 375px;
-   }
-   .p {
-      margin-right: 40px;
-   }
-   .button {
-      width: 240px;
-      margin-top: 20px;
-      padding-left: 60px;
-      padding-right: 60px;
-   }
- }
+        button{
+            display: flex;
+            align-self: center;
+            font-weight: bold;
+            justify-content: center;
+            width:250px;
+            height: 40px;
+            border-radius: 10px;
+            color:white;
+            background-color: hsl(158, 36%, 37%);
+            left: 5%;
+            padding-top: 1em;
+            position: relative;
+            
+        }
+        
+        button:active, button:hover {
+        cursor:pointer;
+        background-color: hsl(152, 30%, 15%);
+        }
+
+        @media only screen and (min-width:801px){
+            button{
+                width:250px;
+                align-content: center;
+                font-size: 15px;
+                padding: 3%;
+                font-weight: normal;
+                text-align: center;
+                display: inherit;
+                line-height:10%;
+            }
+            .image-button{
+                right: 30%;
+            }
+            span{
+                position:absolute;
+                top: 50%;
+                left: 50%;
+                transform:translate(-50%,-50%)
+            }
+            
+            
+        }
+       
+        footer{
+            text-align: center;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: light;
+            color:hsl(228, 12%, 48%);
+            font-size: small;
+            margin-left: 5%;
+        }
+        a:link{
+            color:hsl(158, 36%, 37%) ;
+        }
+        a:visited{
+        color:hsl(300, 100%, 30%);
+        }
+        .attribution{
+            display: block;
+            padding-top:1em;
+            position: absolute;
+        }
+        @media only screen and (min-width:801px){
+            footer{
+                display: flex;
+                justify-content: baseline;
+                align-self: flex-start;
+                flex-direction: row;
+            }
+        }
