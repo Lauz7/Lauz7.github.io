@@ -81,18 +81,16 @@ img{
 Another thing that I have learnt during this project was how to interchange images depending on screen width. 
 
 An example of this from my code -
-<picture>
-                <source 
+
+                 "<source 
                    media="(min-width: 801px)"
                    srcset="https://github.com/Lauz7/Lauz7.github.io/blob/main/image-product-desktop.jpg?raw=true">
                 <source 
                    media="(min-width: 300px)"
                    srcset="https://github.com/Lauz7/Lauz7.github.io/blob/main/image-product-mobile.jpg?raw=true">
                 <img src="https://github.com/Lauz7/Lauz7.github.io/blob/main/image-product-mobile.jpg?raw=true" 
-                alt="perfume pic">
-             </picture>
-
-
+                alt="perfume pic">"
+                
 ### Continued development
 
 I would like to continue working on and practicing the positioning element as well as the flex element. I have used them within my code but I would like to become more comfortable with using them both through practice in future projects.
